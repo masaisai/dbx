@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* 常规设定 */
+img { border: 0; vertical-align: bottom; max-width: 100%; }
+a { text-decoration: none;}
+body { background-color: #fff; font-family: "微软雅黑"; font-size: 14px;}
+h2{font-weight: bold;  opacity: 0; font-size: 24px; line-height: 40px; }
+li{list-style: none;}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,span,img,li{margin:0;padding:0}
+
+.clearfix:after{content:"";display:block;clear:both;}
+.middle{width: 1000px; margin: 0 auto;}
+.wraper{width: 100%; min-width: 1000px; overflow: hidden; position: relative;}
+/* 头部 */
+.head{width: 100%;}
+.head .topArea{background-color: #ece8e8; width: 100%; height: 36px; line-height: 36px;}
+.head .topArea .topWord{float: left; display: inline-block;}
+.head .topArea .topNav{display: inline-block; float: right;}
+.head .topArea .topNav a{padding: 0 8px; height: 36px; color: black; display: inline-block;}
+.head .topArea .topNav a:hover{background: #f7f4f5; color: #EF4347;}
+.head .topMain{width: 100%; height: 100px; background-color: #f83c41;}
+.logo{padding: 5px 0; height: 90px; display: inline-block; float: left; }
+.logo .logoImg{width: 90px; height: 90px; float: left; animation: logmove 3s linear infinite;}
+@keyframes logmove{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.logo .logoImg img{width: 90px; height: 90px;}
+.logo .logoTit{line-height: 90px; display: block; float: left; padding-left: 10px; font-size: 30px; color: white;}
+.topMainLeft{display: inline-block; float: right;}
+.topMainLeft .topMainSearch{width: 320px; height: 36px; float: right; padding-top: 20px;}
+.topMainLeft .topMainSearch form{width: 320px; height: 32px;}
+.topMainLeft .topMainSearch form .keyword{width: 230px; height: 30px; background: #FFFFFF; border: 1px solid #e62e33; float: left; border-right:none; padding: 0 10px;}
+.topMainLeft .topMainSearch form .keyword:focus{box-shadow: inset 0 0 15px #E62E33; outline: none;}
+.topMainLeft .topMainSearch form .submit{width: 68px; height: 30px; display: block; float: left; color: #E62E33; line-height: 30px; text-align: center;background: #F2FB0A; background: linear-gradient(to bottom,#f4fb3b,#f9b22a); border: none; font-size: 14px; margin-top: 1px; cursor: pointer;}
+.topMainLeft .topMainSearch form .submit:hover{color: black;}
+.topMainLeft .nav{clear: right; display: block; float: right;} 
+.topMainLeft .nav ul li{float: left; height: 30px; line-height: 30px; padding-top: 6px;}
+.topMainLeft .nav ul li a{display: block; padding: 0 10px; color: white; font-size: 16px;}
+.topMainLeft .nav ul li a:hover{color: #F2FB0A;}
+
+/* 登录注册*/
+.shade{width:100%; height:100%; position:fixed; left: 0; top: 0; z-index: 999; background:white; opacity: 0.5; display: none;}
+.register,.login{width: 300px;  background: white; position: fixed; top: 120px;  box-shadow: 0 0 15px #555555; z-index: 1000; border-radius: 5px; border: 1px solid #ebebeb; padding: 10px;}
+.close-reg,.close-log{width: 20px; height: 20px; border-radius:50%; line-height: 20px; text-align: center; color: white; background: #EF4347; font-size: 16px; position: absolute; right: 6px; top: 6px;}
+.register{ opacity: 0; filter: alpha(opacity:0); display: none;}
+.register h3,.login h3{line-height:40px; text-align: center; color: #CF0320;}
+.register .hd{height: 40px;}
+.register .hd ul{}
+.register .hd ul li{width: 150px; height: 40px; float: left; line-height: 40px; text-align: center; cursor: pointer;}
+.register .hd ul li.active{background:#ECE8E8; border-radius: 5px 5px 0 0;}
+.register .bd .email-reg,.register .bd .phone-reg,.login form{background: #ECE8E8;}
+.register .bd form,.login form{padding: 10px;}
+.register .bd  form label,.login form label{display: block; line-height: 24px;}
+.register .bd  form .text,.login form .text{display: block; width: 268px; height: 30px; border: 1px solid #ECE8E8; margin-bottom: 4px; padding: 0 5px; outline: rgb(239,67,71);} 
+.register .bd  form .text:focus, form .text:focus{box-shadow: 0 0 5px #CF0320;}
+.register .bd  form .box,.login form .box{line-height: 20px; font-size: 12px; margin-bottom: 10px;}
+.register .bd  form .box a{color: #CF0320;}
+.register .bd  form .submit,.login form .submit{width:120px; height: 36px; display: block; line-height: 34px; text-align: center; color: white; background: #E62E33; border-radius: 5px; border: 1px solid #cf0320; font-size: 16px; margin: 0 auto; cursor: pointer; }
+.register .bd  form .submit:hover,.login form .submit:hover{background: #ef4347;}
+.register .bd .phone-reg{display: none;}
+.register .bd .reg-note{line-height:30px; padding-top: 10px;}
+.register .bd .reg-note a{color:#E62E33;}
+.login{opacity: 0; filter: alpha(opacity:0); display: none;}
+
+.footer{background: #EBEBEB; text-align: center;}
+.footer .footerNav{text-align: center; height: 40px; line-height: 40px; display: inline-block; }
+.footer .footerNav span{font-size: 14px; font-weight: bold;}
+.footer .footerNav a{color: #000000; padding: 0 10px;}
+.footer .bottom{background: #EF4347; color: white; padding: 10px 0;}
+.footer .bottom .copyright{line-height: 24px;}
+.footer .bottom .footerNote{line-height: 24px;}
